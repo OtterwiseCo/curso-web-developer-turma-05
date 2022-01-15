@@ -7,4 +7,4 @@ const sum = numbers.reduce((acc, num) => {
   return acc + num;
 }, 0);
 
-console.log("Soma dos elementos", sum);
+console.log("Soma dos elementos:", sum);
