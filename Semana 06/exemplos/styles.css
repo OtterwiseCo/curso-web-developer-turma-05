@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+#meu-post {
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.post p,
+.post h6 {
+  font-size: 20px;
+}
+
+.post * {
+  color: blue;
+}
