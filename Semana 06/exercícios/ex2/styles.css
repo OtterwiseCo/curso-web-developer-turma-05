@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  background-color: darkcyan;
+}
+
+p,
+li {
+  font-size: 12px;
+}
