@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+#meu-post {
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.post p,
+.post h6 {
+  font-size: 20px;
+}
+
+.post * {
+  color: blue;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  order: 3;
+  display: flex;
+}
+
+#last-box {
+  align-self: flex-start;
+  background-color: red;
+  order: 2;
+}
