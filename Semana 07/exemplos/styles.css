@@ -1,0 +1,43 @@
+h1 {
+  color: blue;
+}
+
+.button {
+  border: none;
+  padding: 5px 10px;
+  background-color: aquamarine;
+}
+
+.button:hover {
+  background-color: aqua;
+}
+
+.button:disabled {
+  background-color: bisque;
+}
+
+.list {
+  background-color: blanchedalmond;
+  padding: 20px;
+}
+
+.list:empty {
+  display: none;
+}
+
+.list-item {
+  font-size: 20px;
+  list-style: none;
+}
+
+.list-item:first-child {
+  color: blueviolet;
+}
+
+.list-item:last-child {
+  color: blueviolet;
+}
+
+.list-item:nth-child(2) {
+  color: blueviolet;
+}

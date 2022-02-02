@@ -1,0 +1,48 @@
+.button {
+  background-color: red;
+}
+
+.button:hover {
+  background-color: blue;
+}
+
+.list-item:nth-child(even) {
+  background-color: aqua;
+}
+/* 
+.list-item:nth-child(2n) {
+  background-color: aqua;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  height: 200px;
+  background-color: blueviolet;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.box p {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .box p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .box p {
+    font-size: 18px;
+  }
+}
