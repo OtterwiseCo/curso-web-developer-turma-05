@@ -1,0 +1,215 @@
+$backgroundColor: #171718;
+$borderColor: #26292d;
+$primaryColor: #5c62ec;
+$cardColor: #3f4144;
+$nameColor: #85bfd1;
+$linkColor: #ffffff;
+
+body {
+  margin: 0;
+  background-color: $backgroundColor;
+  font-family: 'DM Sans', sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 18px 16px;
+  border-bottom: 1px solid $borderColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $backgroundColor;
+
+  &-links {
+    display: none;
+  }
+
+  @media (min-width: 992px) {
+    .navbar-burger {
+      display: none;
+    }
+    .navbar-links {
+      display: flex;
+      gap: 23px;
+      &-link {
+        color: white;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        position: relative;
+        &:hover {
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $primaryColor;
+            height: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.my-info {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  &-title {
+    color: white;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    max-width: 265px;
+    text-align: center;
+    margin-bottom: 24px;
+
+    &-name {
+      color: $primaryColor;
+    }
+  }
+  .button__solid {
+    margin-bottom: 16px;
+  }
+}
+
+.about {
+  padding: 0 16px 64px 16px;
+  &-card {
+    color: white;
+    background-color: $cardColor;
+    padding: 16px;
+    border-radius: 8px;
+    &-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+    &-description {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
+  border-top: 1px solid $borderColor;
+
+  &-logo {
+    padding-top: 31px;
+  }
+
+  &-column {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    &-name {
+      text-align: center;
+      color: $nameColor;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.15px;
+      padding-bottom: 24px;
+    }
+
+    &-link {
+      text-align: center;
+      color: $linkColor;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25;
+    }
+  }
+
+  &-copy {
+    border-top: 1px solid $borderColor;
+    width: 100%;
+    margin-top: 48px;
+    &-text {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      color: white;
+      padding-top: 16px;
+      text-align: center;
+      padding-bottom: 20px;
+      margin: 0;
+    }
+  }
+}
+
+//classes genéricas
+
+.button {
+  border-radius: 5px;
+  height: 48px;
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+
+  &__solid {
+    background-color: $primaryColor;
+    padding-left: 15.5px;
+    padding-right: 15.5px;
+  }
+
+  &__outlined {
+    border: 1px solid #ffff;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  &-text {
+    &__mr-left {
+      margin-left: 8px;
+    }
+
+    &__mr-right {
+      margin-right: 8px;
+    }
+  }
+}
+
+.container {
+  max-width: 1156px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
