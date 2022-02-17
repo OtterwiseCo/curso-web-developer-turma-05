@@ -1,0 +1,15 @@
+.font-sm {
+  font-size: 12px;
+}
+
+.font-md {
+  font-size: 16px;
+}
+
+.font-lg {
+  font-size: 22px;
+}
+
+.text-red {
+  color: red;
+}
