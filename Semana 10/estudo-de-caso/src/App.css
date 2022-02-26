@@ -1,0 +1,14 @@
+.app {
+  width: 100%;
+  background-color: rgb(46, 43, 43);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 10px;
+}
