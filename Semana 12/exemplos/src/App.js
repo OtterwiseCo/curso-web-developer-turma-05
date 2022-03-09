@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { login } from "./services/auth";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { Button, Input, Stack, Flex, Text } from "@chakra-ui/react";
 import * as yup from "yup";
 
 const schema = yup
@@ -32,15 +33,27 @@ function App() {
   console.log(errors);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="email" {...register("email")} />
-      {errors.email && <span>{errors.email.message}</span>}
+    <Flex
+      as="form"
+      mt="20px"
+      justifyContent="center"
+      onSubmit={handleSubmit(onSubmit)}
+    >
+      <Stack spacing={3} w={["100%", "300px"]} p={3}>
+        <Text textAlign="center" fontSize="20px">
+          Meu formulário de login
+        </Text>
+        <Input type="email" {...register("email")} />
+        {errors.email && <span>{errors.email.message}</span>}
 
-      <input type="password" {...register("password")} />
-      {errors.password && <span>{errors.password.message}</span>}
+        <Input type="password" {...register("password")} />
+        {errors.password && <span>{errors.password.message}</span>}
 
-      <input type="submit" />
-    </form>
+        <Button colorScheme="blue" type="submit">
+          Enviar
+        </Button>
+      </Stack>
+    </Flex>
   );
 }
 
