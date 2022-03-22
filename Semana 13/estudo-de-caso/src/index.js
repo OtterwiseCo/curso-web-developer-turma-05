@@ -6,7 +6,7 @@ server.get("/", function (request, reply) {
 
 const start = async () => {
   try {
-    await server.listen(3000);
+    await server.listen(5000);
   } catch (err) {
     server.log.error(err);
     process.exit(1);
